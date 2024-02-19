@@ -3,11 +3,16 @@
     Private lastName As String = "Serrano"
     Private address As String = "123 Main St"
 
-    Public Function GetFullName() As String
+    Public Function getFullName() As String
         Return firstName & " " & lastName
     End Function
 
+    Public Function getFullName(firstName As String, lastName As String) As String
+        Return firstName & " " & lastName
+    End Function
 
-
+    Public Function getFullName(firstName As String, lastName As String, address As String) As String
+        Return firstName & " " & lastName & " " & address
+    End Function
 
 End Class
